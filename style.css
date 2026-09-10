@@ -62,7 +62,7 @@ nav a:hover {
     text-decoration: underline; 
 } 
 
-/* Hamburger menu button (hidden by default on desktop) */
+/* Hamburger Menu Icon Toggle */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -76,7 +76,6 @@ nav a:hover {
     z-index: 1001;
 }
 
-/* Three horizontal lines styling */
 .menu-toggle span {
     width: 100%;
     height: 3px;
@@ -228,7 +227,7 @@ main section p {
 } 
 
 /* ===================================== 
-   MOBILE RESPONSIVE DESIGN WITH HAMBURGER MENU 
+   MOBILE RESPONSIVE DESIGN
    ===================================== */ 
 
 @media (max-width: 800px) { 
@@ -256,12 +255,10 @@ main section p {
         margin-left: 0; 
     } 
 
-    /* Show hamburger icon on mobile */
     .menu-toggle {
         display: flex;
     }
 
-    /* Dropdown navigation hidden by default */
     nav { 
         display: none;
         flex-direction: column;
@@ -276,7 +273,6 @@ main section p {
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     } 
 
-    /* Display nav when toggled active via JavaScript */
     nav.active {
         display: flex;
     }
@@ -293,7 +289,6 @@ main section p {
         border-bottom: none;
     }
 
-    /* Transform hamburger into an 'X' icon when opened */
     .menu-toggle.active span:nth-child(1) {
         transform: translateY(8.5px) rotate(45deg);
     }
@@ -440,11 +435,16 @@ main section p {
     line-height: 1.6; 
 } 
 
+/* MODIFIED: Removed automatic text-decoration underline from project links */
 .project-links a { 
     color: #0056b3; 
-    text-decoration: underline; 
+    text-decoration: none; 
     margin-right: 20px; 
     font-size: 15px; 
+} 
+
+.project-links a:hover { 
+    text-decoration: underline; 
 } 
 
 #cv iframe { 
