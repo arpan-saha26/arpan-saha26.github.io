@@ -385,25 +385,252 @@ padding-bottom: 10px;
 }
 
 /* =====================================
-MOBILE
+   MOBILE RESPONSIVE DESIGN
 ===================================== */
 
 @media (max-width: 800px) {
 
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
 
 
-.profile-photo {
+    /* =====================
+       HEADER
+    ===================== */
 
-    margin-left: auto;
+    .top-bar {
+        height: auto;
+        position: relative;
+    }
 
-    margin-right: auto;
+    .header-content {
+        padding: 15px 20px;
 
-}
-.welcome {
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
+        display: flex;
 
+        justify-content: space-between;
+
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+    .name {
+        font-size: 20px;
+
+        margin-left: 0;
+    }
+
+    nav {
+        margin-left: 0;
+
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+
+    /* =====================
+       MAIN PAGE LAYOUT
+    ===================== */
+
+    .page-layout {
+
+        display: block;
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 40px 25px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================
+       SIDEBAR
+    ===================== */
+
+    .sidebar {
+
+        position: relative;
+
+        top: auto;
+
+        width: 100%;
+
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+
+
+    /* Profile photo */
+
+    .profile-photo {
+
+        width: 160px;
+
+        height: 160px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* Remove desktop negative margins */
+
+    .sidebar h2 {
+
+        margin-left: 0;
+
+        font-size: 18px;
+    }
+
+
+    .sidebar p {
+
+        margin-left: 0;
+
+        font-size: 15px;
+    }
+
+
+    .contact {
+
+        margin-left: 0;
+
+        margin-top: 20px;
+    }
+
+
+    /* =====================
+       MAIN CONTENT
+    ===================== */
+
+    main {
+
+        grid-column: auto;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        min-width: 0;
+    }
+
+
+    .welcome {
+
+        margin-top: 20px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .welcome h1 {
+
+        font-size: 28px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .welcome p {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+
+        text-align: left;
+    }
+
+
+    /* =====================
+       SECTION HEADINGS
+    ===================== */
+
+    main section h2 {
+
+        font-size: 25px;
+    }
+
+
+    main section p {
+
+        font-size: 16px;
+    }
+
+
+    /* =====================
+       EDUCATION
+    ===================== */
+
+    .education-item {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .education-logo img {
+
+        width: 80px;
+
+        height: 80px;
+    }
+
+
+    /* =====================
+       PROJECTS PAGE
+    ===================== */
+
+    .projects-page {
+
+        padding: 40px 25px;
+
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .project-section > h1 {
+
+        font-size: 28px;
+    }
+
+
+    .project h2 {
+
+        font-size: 21px;
+    }
+
+
+    .project li {
+
+        font-size: 16px;
+    }
+
+
+    /* =====================
+       CV IFRAME
+    ===================== */
+
+    #cv iframe {
+
+        width: 100%;
+
+        max-width: 100%;
+    }
 
 }
 
